@@ -5,18 +5,23 @@ const Home = () => {
     <div className="container mx-auto px-4 py-12">
       {/* Hero Section */}
       <section className="text-center py-20">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
-          Welcome to My Portfolio
+        <div className="inline-block mb-4">
+          <span className="px-4 py-2 bg-gradient-to-r from-green-100 to-pink-100 rounded-full text-sm font-semibold text-gray-700">
+            🎨 欢迎来到我的作品集
+          </span>
+        </div>
+        <h1 className="text-5xl md:text-7xl font-bold mb-6">
+          <span className="gradient-text">创造美好的数字体验</span>
         </h1>
-        <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-          Full-Stack Developer | Creative Problem Solver | Tech Enthusiast
+        <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
+          全栈开发者 <span className="accent-dot"></span> 创意问题解决者 <span className="accent-dot"></span> 技术爱好者
         </p>
-        <div className="flex gap-4 justify-center flex-wrap">
+        <div className="flex gap-6 justify-center flex-wrap">
           <Link to="/projects" className="btn-primary">
-            View My Projects
+            🚀 查看我的项目
           </Link>
           <Link to="/blog" className="btn-secondary">
-            Read My Blog
+            📝 阅读博客
           </Link>
         </div>
       </section>
@@ -24,64 +29,96 @@ const Home = () => {
       {/* About Section */}
       <section className="py-16">
         <div className="card max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-gray-800">About Me</h2>
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-1 h-8 bg-gradient-to-b from-green-500 to-pink-500 rounded-full"></div>
+            <h2 className="text-3xl font-bold text-gray-800">关于我</h2>
+          </div>
           <p className="text-gray-600 text-lg leading-relaxed mb-4">
-            Hi! I'm a passionate full-stack developer with expertise in building modern web applications.
-            I love creating elegant solutions to complex problems and sharing my knowledge with the community.
+            👋 你好！我是一名充满热情的全栈开发者，专注于构建现代化的Web应用程序。
+            我热爱为复杂问题创造优雅的解决方案，并与社区分享我的知识。
           </p>
           <p className="text-gray-600 text-lg leading-relaxed">
-            This portfolio showcases my work, projects, and thoughts on web development and technology.
-            Feel free to explore my projects and reach out if you'd like to collaborate!
+            这个作品集展示了我的工作、项目以及对Web开发和技术的思考。
+            欢迎探索我的项目，如果你想合作，请随时联系我！
           </p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <span className="px-4 py-2 bg-green-50 text-green-700 rounded-lg text-sm font-medium">React 专家</span>
+            <span className="px-4 py-2 bg-pink-50 text-pink-700 rounded-lg text-sm font-medium">Node.js 开发</span>
+            <span className="px-4 py-2 bg-green-50 text-green-700 rounded-lg text-sm font-medium">UI/UX 设计</span>
+          </div>
         </div>
       </section>
 
       {/* Skills Section */}
       <section className="py-16">
-        <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">Skills & Technologies</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="card">
-            <div className="w-16 h-16 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center mb-4">
-              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-gray-800 mb-3">技能与技术</h2>
+          <p className="text-gray-600">我精通的开发技术栈</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="card group">
+            <div className="w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold mb-2 text-gray-800">Front-End</h3>
-            <p className="text-gray-600">React, JavaScript, Tailwind CSS, HTML5, CSS3</p>
+            <h3 className="text-2xl font-bold mb-3 text-gray-800">前端开发</h3>
+            <p className="text-gray-600 leading-relaxed">
+              React, JavaScript, TypeScript, Tailwind CSS, HTML5, CSS3, Vite
+            </p>
+            <div className="mt-4 h-2 bg-gray-200 rounded-full overflow-hidden">
+              <div className="h-full bg-gradient-to-r from-green-400 to-green-600 w-11/12 rounded-full"></div>
+            </div>
           </div>
 
-          <div className="card">
-            <div className="w-16 h-16 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center mb-4">
-              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="card group">
+            <div className="w-20 h-20 bg-gradient-to-br from-pink-400 to-pink-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold mb-2 text-gray-800">Back-End</h3>
-            <p className="text-gray-600">Node.js, Express, MongoDB, RESTful APIs, JWT</p>
+            <h3 className="text-2xl font-bold mb-3 text-gray-800">后端开发</h3>
+            <p className="text-gray-600 leading-relaxed">
+              Node.js, Express, MongoDB, PostgreSQL, RESTful APIs, JWT, GraphQL
+            </p>
+            <div className="mt-4 h-2 bg-gray-200 rounded-full overflow-hidden">
+              <div className="h-full bg-gradient-to-r from-pink-400 to-pink-600 w-10/12 rounded-full"></div>
+            </div>
           </div>
 
-          <div className="card">
-            <div className="w-16 h-16 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center mb-4">
-              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="card group">
+            <div className="w-20 h-20 bg-gradient-to-br from-green-400 to-pink-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold mb-2 text-gray-800">Tools</h3>
-            <p className="text-gray-600">Git, VS Code, Postman, npm, MongoDB Atlas</p>
+            <h3 className="text-2xl font-bold mb-3 text-gray-800">工具与部署</h3>
+            <p className="text-gray-600 leading-relaxed">
+              Git, VS Code, Docker, Vercel, Netlify, AWS, CI/CD
+            </p>
+            <div className="mt-4 h-2 bg-gray-200 rounded-full overflow-hidden">
+              <div className="h-full bg-gradient-to-r from-green-400 to-pink-400 w-9/12 rounded-full"></div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="py-16">
-        <div className="card bg-gradient-to-r from-primary-500 to-secondary-500 text-white text-center">
-          <h2 className="text-3xl font-bold mb-4">Let's Work Together!</h2>
-          <p className="text-lg mb-6 text-primary-50">
-            I'm always open to new opportunities and collaborations.
-          </p>
-          <Link to="/contact" className="inline-block px-8 py-3 bg-white text-primary-600 rounded-lg font-bold hover:bg-primary-50 transition-all">
-            Get In Touch
-          </Link>
+        <div className="relative overflow-hidden rounded-3xl">
+          <div className="absolute inset-0 bg-gradient-to-br from-green-400 via-green-500 to-pink-500 opacity-90"></div>
+          <div className="relative card text-white text-center border-0 py-16">
+            <h2 className="text-4xl font-bold mb-4">让我们一起创造精彩！</h2>
+            <p className="text-xl mb-8 text-green-50 max-w-2xl mx-auto">
+              我始终对新的机会和合作持开放态度。让我们一起打造令人惊叹的产品。
+            </p>
+            <Link
+              to="/contact"
+              className="inline-block px-10 py-4 bg-white text-green-600 rounded-xl font-bold hover:bg-green-50 transition-all transform hover:scale-105 shadow-xl"
+            >
+              💬 联系我
+            </Link>
+          </div>
         </div>
       </section>
     </div>

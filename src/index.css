@@ -4,68 +4,93 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(to bottom right, #fdf4ff, white, #fef1f7);
+  background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 50%, #fce4ec 100%);
 }
 
 .btn-primary {
   color: white;
-  padding: 0.625rem 1.5rem;
-  border-radius: 0.5rem;
-  font-weight: 500;
-  transition: all 0.3s;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(to right, #d946ef, #f83b86);
+  padding: 0.75rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+  background: linear-gradient(135deg, #66bb6a, #4caf50);
 }
 
 .btn-primary:hover {
-  background: linear-gradient(to right, #c026d3, #e91c68);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #4caf50, #43a047);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+  transform: translateY(-2px);
 }
 
 .btn-secondary {
   background-color: white;
-  color: #c026d3;
-  border: 2px solid #f0abfc;
-  padding: 0.625rem 1.5rem;
-  border-radius: 0.5rem;
-  font-weight: 500;
-  transition: all 0.3s;
+  color: #e91e63;
+  border: 2px solid #f48fb1;
+  padding: 0.75rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .btn-secondary:hover {
-  background-color: #fdf4ff;
+  background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+  border-color: #f06292;
+  transform: translateY(-2px);
 }
 
 .card {
   background-color: white;
-  border-radius: 0.75rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  transition: box-shadow 0.3s;
-  border: 1px solid #fae8ff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  transition: all 0.3s ease;
+  border: 2px solid #e8f5e9;
 }
 
 .card:hover {
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  border-color: #a5d6a7;
+  transform: translateY(-4px);
 }
 
 .input {
   width: 100%;
-  padding: 0.625rem 1rem;
-  border-radius: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
   outline: none;
   transition: all 0.2s;
-  border: 2px solid #f5d0fe;
+  border: 2px solid #c8e6c9;
+  background-color: #fafafa;
 }
 
 .input:focus {
-  border-color: #d946ef;
-  box-shadow: 0 0 0 2px rgba(249, 168, 212, 0.2);
+  border-color: #4caf50;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
 }
 
 .label {
   display: block;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #374151;
+  color: #2e7d32;
+}
+
+/* 新增渐变文字效果 */
+.gradient-text {
+  background: linear-gradient(135deg, #4caf50, #e91e63);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* 新增装饰性元素 */
+.accent-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #66bb6a, #f06292);
+  display: inline-block;
+  margin: 0 8px;
 }
