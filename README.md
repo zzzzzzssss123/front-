@@ -1,143 +1,143 @@
-# 个人作品集网站 - 前端
+# Personal Portfolio Website - Frontend
 
-一个现代化的个人作品集网站前端项目，采用 React + Vite + Tailwind CSS 构建，提供博客发布、项目展示、联系表单等功能。
+A modern personal portfolio website frontend built with React + Vite + Tailwind CSS, featuring blog publishing, project showcase, contact forms, and more.
 
-## 在线地址
+## Live URLs
 
-- **前端网站**: [https://client-262gfkfiu-asdosadkkoas-projects.vercel.app](https://client-262gfkfiu-asdosadkkoas-projects.vercel.app)
-- **后端 API**: [https://your-backend-domain.vercel.app/api](https://your-backend-domain.vercel.app/api)
-- **后端仓库**: [https://github.com/zzzzzzssss123/backend-1](https://github.com/zzzzzzssss123/backend-1)
-
----
-
-## 项目概述
-
-这是一个功能完整的个人作品集网站前端应用，支持用户认证、博客管理、项目展示和联系表单等功能。网站采用响应式设计，适配各种设备屏幕。
-
-### 主要功能
-
-- **用户系统**
-  - 用户注册和登录
-  - JWT Token 身份验证
-  - 受保护的管理员页面
-
-- **博客功能**
-  - 博客文章列表浏览
-  - 文章详情页面
-  - 评论功能（需登录）
-  - 博客文章管理（管理员）
-
-- **项目展示**
-  - 项目列表展示
-  - 项目详情查看
-  - 项目管理（管理员）
-
-- **联系表单**
-  - 访客留言提交
-  - 消息管理（管理员）
-
-- **管理功能**
-  - 管理员控制面板
-  - 内容管理界面
+- **Frontend Website**: [https://client-262gfkfiu-asdosadkkoas-projects.vercel.app](https://client-262gfkfiu-asdosadkkoas-projects.vercel.app)
+- **Backend API**: [https://your-backend-domain.vercel.app/api](https://your-backend-domain.vercel.app/api)
+- **Backend Repository**: [https://github.com/zzzzzzssss123/backend-1](https://github.com/zzzzzzssss123/backend-1)
 
 ---
 
-## 技术栈
+## Project Overview
 
-- **框架**: React 19.2.0
-- **构建工具**: Vite 7.2.2
-- **样式**: Tailwind CSS 4.1.17
-- **路由**: React Router DOM 7.9.6
-- **HTTP 客户端**: Axios 1.13.2
-- **状态管理**: React Context API
-- **部署平台**: Vercel
+This is a full-featured personal portfolio website frontend application with user authentication, blog management, project showcase, and contact form functionality. The website uses responsive design and adapts to various device screens.
+
+### Key Features
+
+- **User System**
+  - User registration and login
+  - JWT Token authentication
+  - Protected admin pages
+
+- **Blog Features**
+  - Blog post list browsing
+  - Article detail pages
+  - Comment functionality (login required)
+  - Blog post management (admin)
+
+- **Project Showcase**
+  - Project list display
+  - Project detail viewing
+  - Project management (admin)
+
+- **Contact Form**
+  - Visitor message submission
+  - Message management (admin)
+
+- **Admin Features**
+  - Admin control panel
+  - Content management interface
 
 ---
 
-## 本地运行
+## Tech Stack
 
-### 前置要求
+- **Framework**: React 19.2.0
+- **Build Tool**: Vite 7.2.2
+- **Styling**: Tailwind CSS 4.1.17
+- **Routing**: React Router DOM 7.9.6
+- **HTTP Client**: Axios 1.13.2
+- **State Management**: React Context API
+- **Deployment Platform**: Vercel
 
-确保你的开发环境已安装以下工具：
-- Node.js (版本 16.x 或更高)
-- npm 或 yarn 包管理器
+---
+
+## Local Development
+
+### Prerequisites
+
+Ensure your development environment has the following tools installed:
+- Node.js (version 16.x or higher)
+- npm or yarn package manager
 - Git
 
-### 安装步骤
+### Installation Steps
 
-1. **克隆仓库**
+1. **Clone the repository**
    ```bash
    git clone https://github.com/zzzzzzssss123/front-.git
    cd front-
    ```
 
-2. **安装依赖**
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-3. **配置环境变量**
+3. **Configure environment variables**
 
-   在项目根目录创建 `.env` 文件：
+   Create a `.env` file in the project root:
    ```env
    VITE_API_URL=http://localhost:5000/api
    ```
 
-   **环境变量说明**：
-   - `VITE_API_URL`: 后端 API 的基础 URL
-     - 本地开发: `http://localhost:5000/api`
-     - 生产环境: `https://your-backend-domain.vercel.app/api`
+   **Environment Variable Description**:
+   - `VITE_API_URL`: Backend API base URL
+     - Local development: `http://localhost:5000/api`
+     - Production: `https://your-backend-domain.vercel.app/api`
 
-4. **启动开发服务器**
+4. **Start development server**
    ```bash
    npm run dev
    ```
 
-   开发服务器将在 `http://localhost:5173` 启动（Vite 默认端口）
+   The development server will start at `http://localhost:5173` (Vite default port)
 
-5. **打开浏览器**
+5. **Open browser**
 
-   访问 [http://localhost:5173](http://localhost:5173) 查看应用
+   Visit [http://localhost:5173](http://localhost:5173) to view the application
 
 ---
 
-## 如何连接后端 API
+## How to Connect to Backend API
 
-### 开发环境配置
+### Development Environment Configuration
 
-1. **确保后端服务正在运行**
+1. **Ensure backend service is running**
 
-   首先需要启动后端服务器。克隆并运行后端项目：
+   First, start the backend server. Clone and run the backend project:
    ```bash
-   # 在另一个终端窗口
+   # In another terminal window
    git clone https://github.com/zzzzzzssss123/backend-1.git
    cd backend-1
    npm install
    npm start
    ```
 
-   后端默认运行在 `http://localhost:5000`
+   Backend runs on `http://localhost:5000` by default
 
-2. **配置前端环境变量**
+2. **Configure frontend environment variables**
 
-   确保前端的 `.env` 文件配置正确：
+   Ensure the frontend `.env` file is configured correctly:
    ```env
    VITE_API_URL=http://localhost:5000/api
    ```
 
-3. **API 服务配置**
+3. **API Service Configuration**
 
-   项目中的 API 请求通过 `src/services/api.js` 文件统一管理。该文件会自动读取环境变量中的 `VITE_API_URL`。
+   API requests in the project are managed centrally through the `src/services/api.js` file, which automatically reads `VITE_API_URL` from environment variables.
 
    ```javascript
-   // src/services/api.js 示例
+   // src/services/api.js example
    import axios from 'axios';
 
    const api = axios.create({
      baseURL: import.meta.env.VITE_API_URL,
    });
 
-   // 添加请求拦截器，自动附加 JWT Token
+   // Add request interceptor to automatically attach JWT Token
    api.interceptors.request.use((config) => {
      const token = localStorage.getItem('token');
      if (token) {
@@ -147,43 +147,43 @@
    });
    ```
 
-4. **验证连接**
+4. **Verify Connection**
 
-   启动前端和后端后，可以通过以下方式验证连接：
-   - 打开浏览器开发者工具（F12）
-   - 访问网站任意页面
-   - 查看 Network 标签页
-   - 应该能看到向 `http://localhost:5000/api` 发送的请求
+   After starting both frontend and backend, verify the connection:
+   - Open browser developer tools (F12)
+   - Visit any page on the website
+   - Check the Network tab
+   - You should see requests being sent to `http://localhost:5000/api`
 
-### 生产环境配置
+### Production Environment Configuration
 
-在 Vercel 部署时，需要配置环境变量：
+When deploying to Vercel, configure environment variables:
 
-1. 登录 Vercel Dashboard
-2. 选择你的前端项目
-3. 进入 Settings → Environment Variables
-4. 添加环境变量：
+1. Log in to Vercel Dashboard
+2. Select your frontend project
+3. Go to Settings → Environment Variables
+4. Add environment variable:
    - **Key**: `VITE_API_URL`
    - **Value**: `https://your-backend-domain.vercel.app/api`
-5. 重新部署项目
+5. Redeploy the project
 
 ---
 
-## 项目结构
+## Project Structure
 
 ```
 client/
-├── public/              # 静态资源
+├── public/              # Static assets
 ├── src/
-│   ├── assets/         # 图片、图标等资源
-│   ├── components/     # 可复用组件
+│   ├── assets/         # Images, icons, etc.
+│   ├── components/     # Reusable components
 │   │   ├── Header.jsx
 │   │   ├── Footer.jsx
 │   │   ├── Navbar.jsx
 │   │   └── ProtectedRoute.jsx
-│   ├── context/        # React Context (状态管理)
+│   ├── context/        # React Context (state management)
 │   │   └── AuthContext.jsx
-│   ├── pages/          # 页面组件
+│   ├── pages/          # Page components
 │   │   ├── Home.jsx
 │   │   ├── Blog.jsx
 │   │   ├── BlogPost.jsx
@@ -192,102 +192,102 @@ client/
 │   │   ├── Login.jsx
 │   │   ├── Register.jsx
 │   │   └── Admin.jsx
-│   ├── services/       # API 服务
+│   ├── services/       # API services
 │   │   └── api.js
-│   ├── utils/          # 工具函数
-│   ├── App.jsx         # 主应用组件
-│   ├── App.css         # 应用样式
-│   ├── main.jsx        # 应用入口
-│   └── index.css       # 全局样式
-├── .env                # 环境变量（本地）
-├── .gitignore          # Git 忽略文件
-├── index.html          # HTML 模板
-├── package.json        # 项目依赖
-├── vite.config.js      # Vite 配置
-├── vercel.json         # Vercel 部署配置
-└── tailwind.config.js  # Tailwind CSS 配置
+│   ├── utils/          # Utility functions
+│   ├── App.jsx         # Main app component
+│   ├── App.css         # App styles
+│   ├── main.jsx        # App entry point
+│   └── index.css       # Global styles
+├── .env                # Environment variables (local)
+├── .gitignore          # Git ignore file
+├── index.html          # HTML template
+├── package.json        # Project dependencies
+├── vite.config.js      # Vite configuration
+├── vercel.json         # Vercel deployment config
+└── tailwind.config.js  # Tailwind CSS configuration
 ```
 
 ---
 
-## 可用脚本
+## Available Scripts
 
-在项目目录中，你可以运行以下命令：
+In the project directory, you can run:
 
 ### `npm run dev`
 
-启动开发服务器，支持热模块替换（HMR）。
+Starts the development server with Hot Module Replacement (HMR).
 
 ### `npm run build`
 
-构建生产版本到 `dist` 目录。
+Builds the production version to the `dist` directory.
 
 ### `npm run preview`
 
-预览生产构建版本。
+Previews the production build.
 
 ### `npm run lint`
 
-运行 ESLint 检查代码质量。
+Runs ESLint to check code quality.
 
 ---
 
-## 路由说明
+## Route Overview
 
-应用使用 React Router 进行客户端路由管理：
+The application uses React Router for client-side routing:
 
-| 路由路径 | 组件 | 说明 | 权限 |
-|---------|------|------|------|
-| `/` | Home | 首页 | 公开 |
-| `/projects` | Projects | 项目展示 | 公开 |
-| `/blog` | Blog | 博客列表 | 公开 |
-| `/blog/:id` | BlogPost | 博客详情 | 公开 |
-| `/contact` | Contact | 联系表单 | 公开 |
-| `/login` | Login | 登录 | 公开 |
-| `/register` | Register | 注册 | 公开 |
-| `/admin` | Admin | 管理面板 | 需登录 |
+| Route Path | Component | Description | Access |
+|-----------|-----------|-------------|--------|
+| `/` | Home | Homepage | Public |
+| `/projects` | Projects | Project showcase | Public |
+| `/blog` | Blog | Blog list | Public |
+| `/blog/:id` | BlogPost | Blog details | Public |
+| `/contact` | Contact | Contact form | Public |
+| `/login` | Login | Login page | Public |
+| `/register` | Register | Registration | Public |
+| `/admin` | Admin | Admin panel | Auth Required |
 
 ---
 
-## 部署到 Vercel
+## Deploy to Vercel
 
-### 自动部署
+### Automatic Deployment
 
-项目已配置 Vercel 自动部署：
+The project is configured for automatic Vercel deployment:
 
-1. 将代码推送到 GitHub
-2. Vercel 自动检测更新并部署
-3. 部署完成后访问生成的 URL
+1. Push code to GitHub
+2. Vercel automatically detects updates and deploys
+3. Access the generated URL after deployment
 
-### 手动部署
+### Manual Deployment
 
-使用 Vercel CLI 进行部署：
+Deploy using Vercel CLI:
 
-1. **安装 Vercel CLI**
+1. **Install Vercel CLI**
    ```bash
    npm install -g vercel
    ```
 
-2. **登录 Vercel**
+2. **Login to Vercel**
    ```bash
    vercel login
    ```
 
-3. **部署项目**
+3. **Deploy Project**
    ```bash
    vercel
    ```
 
-4. **生产环境部署**
+4. **Production Deployment**
    ```bash
    vercel --prod
    ```
 
 ---
 
-## Vercel 配置说明
+## Vercel Configuration
 
-项目包含 `vercel.json` 配置文件，用于处理 React Router 的客户端路由：
+The project includes a `vercel.json` configuration file to handle React Router client-side routing:
 
 ```json
 {
@@ -300,55 +300,55 @@ client/
 }
 ```
 
-这个配置确保所有路由请求都重定向到 `index.html`，由 React Router 处理路由。
+This configuration ensures all route requests are redirected to `index.html`, handled by React Router.
 
 ---
 
-## 常见问题
+## Common Issues
 
-### 1. API 请求失败 (CORS 错误)
+### 1. API Request Failure (CORS Error)
 
-**问题**: 浏览器控制台显示 CORS 相关错误
+**Issue**: Browser console shows CORS-related errors
 
-**解决方案**: 确保后端已正确配置 CORS，允许前端域名访问
+**Solution**: Ensure backend has CORS properly configured to allow frontend domain access
 
-### 2. 环境变量未生效
+### 2. Environment Variables Not Working
 
-**问题**: 修改 `.env` 文件后没有效果
+**Issue**: Changes to `.env` file have no effect
 
-**解决方案**:
-- Vite 环境变量必须以 `VITE_` 开头
-- 修改 `.env` 后需要重启开发服务器
-- 使用 `import.meta.env.VITE_变量名` 访问
+**Solution**:
+- Vite environment variables must start with `VITE_`
+- Restart development server after modifying `.env`
+- Access using `import.meta.env.VITE_VARIABLE_NAME`
 
-### 3. 404 错误 (部署后)
+### 3. 404 Error (After Deployment)
 
-**问题**: 刷新页面时出现 404 错误
+**Issue**: 404 error when refreshing pages
 
-**解决方案**: 确保 `vercel.json` 配置正确，所有路由重定向到 `index.html`
+**Solution**: Ensure `vercel.json` is configured correctly to redirect all routes to `index.html`
 
-### 4. Token 过期
+### 4. Token Expiration
 
-**问题**: 登录后一段时间自动退出
+**Issue**: Automatic logout after some time
 
-**解决方案**: JWT Token 默认有效期为 30 天，过期后需要重新登录
+**Solution**: JWT Token default validity is 30 days, re-login required after expiration
 
 ---
 
-## 开发指南
+## Development Guide
 
-### 添加新页面
+### Adding New Pages
 
-1. 在 `src/pages/` 创建新组件
-2. 在 `src/App.jsx` 添加路由配置
-3. 在导航栏添加链接（如需要）
+1. Create new component in `src/pages/`
+2. Add route configuration in `src/App.jsx`
+3. Add link to navigation bar (if needed)
 
-### 调用 API
+### API Calls
 
 ```javascript
 import api from '../services/api';
 
-// GET 请求
+// GET request
 const fetchData = async () => {
   try {
     const response = await api.get('/endpoint');
@@ -358,7 +358,7 @@ const fetchData = async () => {
   }
 };
 
-// POST 请求
+// POST request
 const sendData = async (data) => {
   try {
     const response = await api.post('/endpoint', data);
@@ -369,7 +369,7 @@ const sendData = async (data) => {
 };
 ```
 
-### 使用认证上下文
+### Using Auth Context
 
 ```javascript
 import { useAuth } from '../context/AuthContext';
@@ -377,46 +377,46 @@ import { useAuth } from '../context/AuthContext';
 function MyComponent() {
   const { user, login, logout } = useAuth();
 
-  // 检查用户是否登录
+  // Check if user is logged in
   if (user) {
-    // 已登录
+    // User is logged in
   }
 }
 ```
 
 ---
 
-## 浏览器支持
+## Browser Support
 
-- Chrome (最新版)
-- Firefox (最新版)
-- Safari (最新版)
-- Edge (最新版)
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
 ---
 
-## 许可证
+## License
 
 MIT License
 
 ---
 
-## 相关链接
+## Related Links
 
-- **后端仓库**: [https://github.com/zzzzzzssss123/backend-1](https://github.com/zzzzzzssss123/backend-1)
-- **后端 API 文档**: 查看后端仓库的 README.md
-- **在线演示**: [https://client-262gfkfiu-asdosadkkoas-projects.vercel.app](https://client-262gfkfiu-asdosadkkoas-projects.vercel.app)
+- **Backend Repository**: [https://github.com/zzzzzzssss123/backend-1](https://github.com/zzzzzzssss123/backend-1)
+- **Backend API Documentation**: See backend repository README.md
+- **Live Demo**: [https://client-262gfkfiu-asdosadkkoas-projects.vercel.app](https://client-262gfkfiu-asdosadkkoas-projects.vercel.app)
 
 ---
 
-## 联系方式
+## Contact
 
-如有问题或建议，请通过以下方式联系：
+For questions or suggestions, contact via:
 - GitHub Issues: [https://github.com/zzzzzzssss123/front-/issues](https://github.com/zzzzzzssss123/front-/issues)
-- 通过网站联系表单留言
+- Use the website contact form
 
 ---
 
-## 致谢
+## Acknowledgements
 
-感谢所有开源项目和贡献者！
+Thanks to all open-source projects and contributors!
